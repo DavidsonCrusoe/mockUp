@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/main/style.css">
+</head>
+
+<body>
+  <header>
+      <nav class="navi">
+     <img class="item" id="buttonBack" src="/main/data/icons/winkel-kreis-links.png">
+     <img class="item" id="buttonHome" onclick="navigateHome()" src="/main/data/icons/house-door-fill.svg" >
+    <img class="item" id="buttonNew" onclick="navigateNew()" src="/main/Data/Icons/edit.png">
+    <img class="item" onclick="navigateLogin()" id="buttonLogin" src="/main/data/icons/file-person.svg">
+    </nav>
+  </header>
+  <main>
+   <div>
+     <h1>Add new</h1>
+     <fieldset>
+       <legend>about your emittment</legend>
+     <h2>
+       let us know what you would like to emitt!
+     </h2>
+     <br><!-- form for entering data about the asset-->
+     <form action="select">
+  <label>Category:
+    <select name="top5" size="5">
+      <option>Cars</option>
+      <option>Watches</option>
+      <option>Art</option>
+      <option>Real Estate</option>
+      <option>Other</option>
+    </select>
+  </label>
+  <br>
+<input placeholder="manufacturer">
+<br>
+<input placeholder="model/object">
+<br>
+<input placeholder="modelnumber/FIN">
+<br>
+<input type="number" placeholder="year">
+<br>
+<p>please upload registration documents and proof of insurance</p>
+ <input type="file" id="myFile" name="filename">
+ </fieldset>
+ <fieldset>
+   <legend>about you</legend>
+ <h2>
+   let's stay in touch! 
+ </h2>
+ <p>how can we reach out to you? </p>
+  <br>
+  <input type="text" placeholder="Full Name"><br>
+  <input placeholder="Email"><br>
+  <input type="tel" placeholder="Phone"><br>
+   <p>  <input type="checkbox">I accept the <a href="">terms and conditions</a>
+ </p>
+  <input type="submit" value="Send!">
+  
+</form>
+</fieldset>
+    </div>
+  </main>
+  <script type="text/javascript" src="/main/main.js">
+
+ </script>
+</body>
+
+</html>

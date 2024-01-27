@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  details[open]{
+  position:relative; z-index: 0; padding: 10px;
+  border-radius: 15px; background-color: grey;
+}
+summary{
+  color: #111111;
+}
+</style>
+  <title>sølt.</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!--kopfzeile zur Navigation zwischen den Seiten-->
+  <nav class="navi">
+     <img class="item" id="buttonBack" src="/main/data/icons/winkel-kreis-links.png">
+     <img class="item" id="buttonHome" onclick="navigateHome() " src="/main/data/icons/house-door-fill.svg" >
+    <img class="item" id="buttonNew" onclick="navigateNew()" src="/main/Data/Icons/edit.png">
+    <img class="item" onclick="navigateLogin()" id="buttonLogin" src="/main/data/icons/file-person.svg">
+    </nav>
+  </header>
+  <main>
+    <div id="whatsNew">
+    <h1>What's new</h1>
+    <!--adding list to scroll-->
+    <section id="newsList">
+    <ul>
+      <li>
+    <h2><strong>Cars</strong></h2>
+        <img src="/main/Data/img/front-view-dark-concept-car-silhouette_148087-38.jpg">
+<br>
+<button onclick="buyAlert()" class="buttonBuy">Buy</button>
+<button onclick="navigateNew()" class="buttonSell">
+  Sell
+</button><br><br>
+<details><summary>about our cars</summary> buy shares of luxury cars and oldtimers to develop your portfolio! click to see our latest projects!</details>
+      </li>
+      <li>
+       <h2><strong> Watches</strong></h2>
+       <img src="/main/Data/img/watches.jpg">
+               <br>
+        <button onclick="buyAlert()" class="buttonBuy">Buy</button>
+        <button onclick="navigateNew()" class="buttonSell">Sell</button>
+        <br><br>
+        <details><summary>about our watches</summary> buy shares of luxury and unique watches to develop your portfolio! click to see our latest projects!</details>
+      </li>
+      <li>
+        <h2><strong>Art</strong></h2>
+        <img src="/main/Data/img/white-paint-splash-on-black-background-biwa-studio.jpg">
+                <br>
+        <button onclick="buyAlert()" class="buttonBuy">Buy</button>
+        <button onclick="navigateNew()" class="buttonSell">Sell</button>
+         <br><br>
+        <details><summary>about our artworks</summary> buy shares of renommated and unique artworks to develop your portfolio! click to see our latest artworks!</details>
+      </li>
+       <li>
+        <h2><strong>Real Estate</strong></h2>
+        <img src="/main/Data/img/wall-murals-vector-illustration-of-cities-silhouette-on-black-background.jpg.jpg">
+                <br>
+        <button onclick="buyAlert()" class="buttonBuy">Buy</button>
+        <button onclick="navigateNew()" class="buttonSell">Sell</button>
+         <br><br>
+        <details><summary>about real estate</summary> buy shares of luxury and unique real estate projects to develop your portfolio! click to see our latest projects!</details>
+      </li>
+      <br><br>
+    </ul>
+    </section>
+    </div>
+  </main>
+  <!-- Project -->
+  
+  <script type="text/javascript" src="main.js">
+
+</script>
+</body>
+</html>

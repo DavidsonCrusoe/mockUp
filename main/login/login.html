@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width:device-width", initial-scale="1">
+  
+  <!-- Custom Styles -->
+  <style>
+    details>summary {
+      list-style: none;
+    }
+  </style>
+  <link rel="stylesheet" href="/main/style.css">
+  <title>
+   sølt.login
+  </title>
+</head>
+
+<body>
+  <header>
+       <h1>Login</h1>
+       <nav class="navi">
+     <img class="item" id="buttonBack" src="/main/data/icons/winkel-kreis-links.png">
+     <img class="item" id="buttonHome" onclick="navigateHome()" src="/main/data/icons/house-door-fill.svg" >
+    <img class="item" id="buttonNew" onclick="navigateNew()" src="/main/Data/Icons/edit.png">
+    <img class="item" onclick="navigateLogin()" id="buttonLogin" src="/main/data/icons/file-person.svg">
+    </nav>
+  </header>
+  <main>
+   <section name="loginForm">
+     
+     <input type="email" placeholder="E-Mail" id="loginMail"><br><br>
+       
+     <input type="password" placeholder="Password"><br>
+     <br>
+     <button type="submit" id="submitLogin" onclick="pleaseRegister()">
+       Login 
+     </button>
+    </section>
+    
+    <section name="registerForm">
+  
+    <details>
+     <summary><legend><h2><u>Register</u></h2></legend></summary>
+      
+     <input type="email" placeholder="E-Mail" id="registerMail"><br><br>
+     <input id = "getFirstName" type="text" placeholder="First Name"><input id = "getLastName" type="text" placeholder="Last name"><br><br>
+     
+       
+     <input type="password" placeholder="Password" id="firstPassword"><br>
+     <input type="password" placeholder="Repeat Password"><br>
+     <input type="checkbox" text-size="10px" id ="getNewsLetter">
+       subscribe to Newsletter
+     </input>
+     <br><br>
+     <button type="submit" id="submitLogin" onclick="Register()">
+       Register 
+     </button>
+    </details>
+    </section>
+  </main>
+
+</body>
+ <script type="text/javascript" src="/main/main.js">
+
+</script>
+
+</html>
